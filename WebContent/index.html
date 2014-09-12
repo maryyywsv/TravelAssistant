@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <meta charset="UTF-8">
 <title>Travel Assistant</title>
 </head>
 <body>
-<form action="travel-service" method="get">
-From:<input type = "text" name = "from"></input><br/>
-To:<input type = "text" name = "to"></input><br/>
-Date:<input type = "text" name = "date"></input><br/>
-<input type = "submit" value = "Start">
-</form>
+	<br/>
+	<p class="col-sm-offset-2">Welcome, it is easy to find the weather and flight statuses information here.</p>
+	<br/>
+	<p class="col-sm-offset-2">Search weather information here.</p>
+	<form action="travel-service" method="post" class="form-horizontal"
+		role="form">
+		<div class="form-group">
+			<label for="from" class="col-sm-2 control-label">From</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="from"
+					placeholder="Input a city name" name="from">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="to" class="col-sm-2 control-label">To</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="to"
+					placeholder="Input a city name" name="to">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="date" class="col-sm-2 control-label">Date</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="date" name="date"
+					placeholder="Input a date(yyyy-mm-dd)">
+			</div>
+		</div>
+		
+		<br/>
+	    <p class="col-sm-offset-2">Search flight statuses information here.</p>
+		<div class="form-group">
+			<label for="carrier" class="col-sm-2 control-label">Carrier</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="carrier" name="carrier"
+					placeholder="Input a carrier name(like AA)">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="flightNumber" class="col-sm-2 control-label">Flight Number</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="flightNumber" name="flightNumber"
+					placeholder="Input a Flight Number(four digits)">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="year" class="col-sm-2 control-label">Year</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="year" name="year"
+					placeholder="Input a year(four-digit year)">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="month" class="col-sm-2 control-label">Month</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="month" name="month"
+					placeholder="Input a month(1 to 12)">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="day" class="col-sm-2 control-label">Day</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control" id="day" name="day"
+					placeholder="Input a day(day of month)">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-6">
+				<button type="submit" class="btn btn-default">Go</button>
+			</div>
+		</div>
+	</form>
 </body>
 </html>
