@@ -1,7 +1,6 @@
 package com.cmu.sv.mary.soc.lab2;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -37,7 +36,7 @@ public class Main extends HttpServlet {
 		String day = request.getParameter("day");
 		String carrier = request.getParameter("carrier");
 		String flightNumber = request.getParameter("flightNumber");
-		
+
 		WeatherAssistant fromWeather = new WeatherAssistant(from, date);
 		WeatherAssistant toWeather = new WeatherAssistant(to, date);
 
